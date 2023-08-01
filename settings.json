@@ -305,5 +305,7 @@
   },
   "terminal.integrated.defaultProfile.windows": "Git Bash",
   "editor.scrollbar.verticalScrollbarSize": 0,
-  "workbench.colorTheme": "VSCode Paradise (Dark) - nickesc"
+  "workbench.colorTheme": "Hybrid dim",
+  "workbench.startupEditor": "none",
+  "dev.containers.dockerPath": "podman",
 }
