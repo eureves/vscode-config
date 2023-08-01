@@ -24,9 +24,7 @@
     "key": "alt+a",
     "command": "workbench.action.terminal.toggleTerminal"
   },
-
   // explorer
-
   {
     "key": "s",
     "command": "explorer.openToSide",
