@@ -2,15 +2,14 @@
   "editor.bracketPairColorization.enabled": true,
   "editor.cursorSmoothCaretAnimation": "off",
   "editor.cursorStyle": "block",
-  "editor.fontFamily": "Iosevka Nerd Font",
-  "editor.fontSize": 18,
-  "editor.lineHeight": 1.5,
+  "editor.fontFamily": "FantasqueSansM Nerd Font",
+  "editor.fontSize": 16,
   "editor.fontLigatures": true,
   "editor.formatOnSave": true,
   "editor.guides.indentation": false,
   "editor.renderLineHighlight": "none",
   "editor.hideCursorInOverviewRuler": true,
-  "editor.lineNumbers": "relative",
+  "editor.lineNumbers": "off",
   "editor.minimap.enabled": false,
   "editor.mouseWheelZoom": true,
   "editor.occurrencesHighlight": false,
@@ -87,7 +86,6 @@
   "vim.hlsearch": true,
   "vim.incsearch": true,
   "vim.leader": "space",
-  "vim.smartRelativeLine": true,
   "vim.useCtrlKeys": true,
   "vim.useSystemClipboard": true,
   "vim.handleKeys": {
@@ -101,202 +99,102 @@
   },
   "vim.normalModeKeyBindings": [
     {
-      "before": [
-        "g",
-        "w"
-      ],
-      "commands": [
-        "editor.action.marker.next"
-      ]
+      "before": ["g", "w"],
+      "commands": ["editor.action.marker.next"]
     },
     {
-      "before": [
-        "<leader>",
-        "l",
-        "c"
-      ],
-      "commands": [
-        "workbench.action.toggleCenteredLayout"
-      ]
+      "before": ["<leader>", "l", "c"],
+      "commands": ["workbench.action.toggleCenteredLayout"]
     },
     {
-      "before": [
-        "<leader>",
-        "z",
-        "i"
-      ],
-      "commands": [
-        "editor.foldRecursively"
-      ]
+      "before": ["<leader>", "z", "i"],
+      "commands": ["editor.foldRecursively"]
     },
     {
-      "before": [
-        "<leader>",
-        "z",
-        "o"
-      ],
-      "commands": [
-        "editor.unfoldRecursively"
-      ]
+      "before": ["<leader>", "z", "o"],
+      "commands": ["editor.unfoldRecursively"]
     },
     {
-      "before": [
-        "<leader>",
-        "l",
-        "z"
-      ],
-      "commands": [
-        "workbench.action.toggleZenMode"
-      ]
+      "before": ["<leader>", "l", "z"],
+      "commands": ["workbench.action.toggleZenMode"]
     },
     {
-      "before": [
-        "<leader>",
-        "e"
-      ],
-      "commands": [
-        "workbench.action.toggleSidebarVisibility"
-      ]
+      "before": ["<leader>", "e"],
+      "commands": ["workbench.action.toggleSidebarVisibility"]
     },
     {
-      "before": [
-        "<leader>",
-        "s"
-      ],
-      "commands": [
-        "workbench.action.files.save"
-      ]
+      "before": ["<leader>", "s"],
+      "commands": ["workbench.action.files.save"]
     },
     {
-      "before": [
-        "<leader>",
-        "x"
-      ],
-      "commands": [
-        "workbench.action.closeActiveEditor"
-      ]
+      "before": ["<leader>", "x"],
+      "commands": ["workbench.action.closeActiveEditor"]
     },
     {
-      "before": [
-        "<leader>",
-        "t"
-      ],
-      "commands": [
-        "workbench.action.gotoSymbol"
-      ]
+      "before": ["<leader>", "t"],
+      "commands": ["workbench.action.gotoSymbol"]
     },
     {
-      "before": [
-        "shift+tab"
-      ],
-      "commands": [
-        "workbench.action.previousEditorInGroup"
-      ]
+      "before": ["shift+tab"],
+      "commands": ["workbench.action.previousEditorInGroup"]
     },
     {
-      "before": [
-        "tab"
-      ],
-      "commands": [
-        "workbench.action.nextEditorInGroup"
-      ]
+      "before": ["tab"],
+      "commands": ["workbench.action.nextEditorInGroup"]
     },
     {
-      "before": [
-        "g",
-        "a"
-      ],
-      "commands": [
-        "editor.action.quickFix"
-      ]
+      "before": ["g", "a"],
+      "commands": ["editor.action.quickFix"]
     },
     {
-      "before": [
-        "g",
-        "r"
-      ],
-      "commands": [
-        "editor.action.goToReferences"
-      ]
+      "before": ["g", "r"],
+      "commands": ["editor.action.goToReferences"]
     },
     {
-      "before": [
-        "<leader>",
-        "w",
-        "l"
-      ],
-      "commands": [
-        "workbench.action.splitEditor"
-      ]
+      "before": ["<leader>", "w", "l"],
+      "commands": ["workbench.action.splitEditor"]
     },
     {
-      "before": [
-        "<leader>",
-        "w",
-        "j"
-      ],
-      "commands": [
-        "workbench.action.splitEditorOrthogonal"
-      ]
+      "before": ["<leader>", "w", "j"],
+      "commands": ["workbench.action.splitEditorOrthogonal"]
     },
     {
-      "before": [
-        "<C-h>"
-      ],
-      "commands": [
-        "workbench.action.navigateLeft"
-      ]
+      "before": ["<C-h>"],
+      "commands": ["workbench.action.navigateLeft"]
     },
     {
-      "before": [
-        "<C-l>"
-      ],
-      "commands": [
-        "workbench.action.navigateRight"
-      ]
+      "before": ["<C-l>"],
+      "commands": ["workbench.action.navigateRight"]
     },
     {
-      "before": [
-        "<C-j>"
-      ],
-      "commands": [
-        "workbench.action.navigateDown"
-      ]
+      "before": ["<C-j>"],
+      "commands": ["workbench.action.navigateDown"]
     },
     {
-      "before": [
-        "<C-k>"
-      ],
-      "commands": [
-        "workbench.action.navigateUp"
-      ]
-    }
+      "before": ["<C-k>"],
+      "commands": ["workbench.action.navigateUp"]
+    },
+    {
+      "before": ["z", "o"],
+      "commands": ["editor.unfold"]
+    },
+    {
+      "before": ["z", "c"],
+      "commands": ["editor.fold"]
+    },
   ],
   "vim.visualModeKeyBindings": [
     {
-      "before": [
-        ">"
-      ],
-      "commands": [
-        "editor.action.indentLines"
-      ]
+      "before": [">"],
+      "commands": ["editor.action.indentLines"]
     },
     {
-      "before": [
-        "g",
-        "a"
-      ],
-      "commands": [
-        "editor.action.quickFix"
-      ]
+      "before": ["g", "a"],
+      "commands": ["editor.action.quickFix"]
     },
     {
-      "before": [
-        "<"
-      ],
-      "commands": [
-        "editor.action.outdentLines"
-      ]
+      "before": ["<"],
+      "commands": ["editor.action.outdentLines"]
     }
   ],
   "vsicons.dontShowNewVersionMessage": true,
@@ -305,7 +203,11 @@
   },
   "terminal.integrated.defaultProfile.windows": "Git Bash",
   "editor.scrollbar.verticalScrollbarSize": 0,
-  "workbench.colorTheme": "Hybrid dim",
   "workbench.startupEditor": "none",
   "dev.containers.dockerPath": "podman",
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "chat.editor.wordWrap": "on",
+  "workbench.colorTheme": "Default Dark+"
 }
