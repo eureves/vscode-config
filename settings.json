@@ -1,19 +1,27 @@
 {
+  "accessibility.alert.breakpoint": false,
+  "debug.showInlineBreakpointCandidates": false,
+  "editor.accessibilitySupport": "off",
   "editor.autoClosingBrackets": "always",
-  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.cursorSmoothCaretAnimation": "off",
   "editor.cursorSurroundingLines": 10,
-  "editor.fontFamily": "FantasqueSansM Nerd Font, 'Courier New', monospace",
-  "editor.fontSize": 16,
+  "editor.fontFamily": "JetBrainsMono Nerd Font, 'Courier New', monospace",
+  "editor.fontSize": 14,
+  "editor.glyphMargin": false,
+  "editor.guides.indentation": false,
   "editor.lineNumbers": "off",
   "editor.linkedEditing": true,
-  "editor.stickyScroll.enabled": true,
   "editor.suggest.insertMode": "replace",
+  "explorer.compactFolders": false,
   "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "window.commandCenter": false,
+  "window.density.editorTabHeight": "compact",
   "workbench.activityBar.location": "top",
-  "workbench.colorTheme": "BugFrag",
-  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Cotion Theme",
+  "workbench.iconTheme": "mosmmy-icons-vscode",
+  "workbench.layoutControl.enabled": false,
+  "workbench.tree.enableStickyScroll": false,
 
-  //VIM
   "extensions.experimental.affinity": {
     "vscodevim.vim": 1
   },
@@ -166,21 +174,13 @@
   "vim.statusBarColors.visualblock": "#a02236",
   "vim.statusBarColors.visualline": "#9C195B",
 
-
   //MISCELLANEOUS
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[scss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "material-icon-theme.folders.theme": "classic",
 
   "workbench.colorCustomizations": {
     "statusBar.background": "#1d2021",
@@ -188,5 +188,10 @@
     "statusBar.debuggingBackground": "#1d2021",
     "statusBar.foreground": "#ffffff",
     "statusBar.debuggingForeground": "#ffffff"
-  }
+  },
+  "git.autofetch": true,
+  "cSpell.language": "en, ru",
+  "editor.unicodeHighlight.allowedLocales": {
+    "ru": true
+  },
 }
