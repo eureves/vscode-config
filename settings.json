@@ -16,7 +16,6 @@
   "terminal.integrated.defaultProfile.windows": "Git Bash",
   "window.commandCenter": false,
   "window.density.editorTabHeight": "compact",
-  "workbench.activityBar.location": "top",
   "workbench.colorTheme": "Cotion Theme",
   "workbench.iconTheme": "mosmmy-icons-vscode",
   "workbench.layoutControl.enabled": false,
