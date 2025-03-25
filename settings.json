@@ -1,195 +1,315 @@
 {
-  "accessibility.alert.breakpoint": false,
-  "debug.showInlineBreakpointCandidates": false,
-  "editor.accessibilitySupport": "off",
-  "editor.autoClosingBrackets": "always",
-  "editor.cursorSmoothCaretAnimation": "off",
-  "editor.cursorSurroundingLines": 10,
-  "editor.fontFamily": "JetBrainsMono Nerd Font, 'Courier New', monospace",
-  "editor.fontSize": 14,
-  "editor.glyphMargin": false,
-  "editor.guides.indentation": false,
-  "editor.lineNumbers": "off",
-  "editor.linkedEditing": true,
-  "editor.suggest.insertMode": "replace",
-  "explorer.compactFolders": false,
-  "terminal.integrated.defaultProfile.windows": "Git Bash",
-  "window.commandCenter": false,
-  "workbench.colorTheme": "Cotion Theme",
-  "workbench.iconTheme": "mosmmy-icons-vscode",
-  "workbench.layoutControl.enabled": false,
-  "workbench.tree.enableStickyScroll": false,
-
-  "extensions.experimental.affinity": {
-    "vscodevim.vim": 1
-  },
-  "vim.easymotion": true,
-  "vim.foldfix": true,
-  "vim.highlightedyank.enable": true,
-  "vim.hlsearch": true,
-  "vim.incsearch": true,
-  "vim.leader": "space",
-  "vim.useCtrlKeys": true,
-  "vim.useSystemClipboard": true,
-  "vim.handleKeys": {
-    "<C-f>": false,
-    "<C-a>": false,
-    "<C-c>": false,
-    "<C-v>": false,
-    "<C-z>": false,
-    "<C-y>": false,
-    "<C-b>": false
-  },
-  "vim.normalModeKeyBindings": [
-    // FOLDING
-    {
-      "before": ["z", "o"],
-      "commands": ["editor.unfold"]
+    "debug.showInlineBreakpointCandidates": false,
+    "editor.accessibilitySupport": "off",
+    "editor.autoClosingBrackets": "always",
+    "editor.cursorSmoothCaretAnimation": "off",
+    "editor.cursorSurroundingLines": 10,
+    "editor.fontSize": 14,
+    "editor.glyphMargin": false,
+    "editor.guides.indentation": false,
+    "editor.lineNumbers": "off",
+    "editor.linkedEditing": true,
+    "editor.suggest.insertMode": "replace",
+    "explorer.compactFolders": false,
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "window.commandCenter": false,
+    "workbench.colorTheme": "Cotion Theme",
+    "workbench.iconTheme": "mosmmy-icons-vscode",
+    "workbench.layoutControl.enabled": false,
+    "workbench.tree.enableStickyScroll": false,
+    "extensions.experimental.affinity": {
+        "vscodevim.vim": 1
     },
-    {
-      "before": ["z", "i"],
-      "commands": ["editor.fold"]
+    "vim.easymotion": true,
+    "vim.foldfix": true,
+    "vim.highlightedyank.enable": true,
+    "vim.hlsearch": true,
+    "vim.incsearch": true,
+    "vim.leader": "space",
+    "vim.useCtrlKeys": true,
+    "vim.useSystemClipboard": true,
+    "vim.handleKeys": {
+        "<C-f>": false,
+        "<C-a>": false,
+        "<C-c>": false,
+        "<C-v>": false,
+        "<C-z>": false,
+        "<C-y>": false,
+        "<C-b>": false
     },
-    {
-      "before": ["<leader>", "z", "i"],
-      "commands": ["editor.foldRecursively"]
+    "vim.normalModeKeyBindings": [
+        // FOLDING
+        {
+            "before": [
+                "z",
+                "o"
+            ],
+            "commands": [
+                "editor.unfold"
+            ]
+        },
+        {
+            "before": [
+                "z",
+                "i"
+            ],
+            "commands": [
+                "editor.fold"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "z",
+                "i"
+            ],
+            "commands": [
+                "editor.foldRecursively"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "z",
+                "o"
+            ],
+            "commands": [
+                "editor.unfoldRecursively"
+            ]
+        },
+        // VIEWS
+        {
+            "before": [
+                "<leader>",
+                "e"
+            ],
+            "commands": [
+                "workbench.view.explorer"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "h",
+                "e"
+            ],
+            "commands": [
+                "workbench.action.toggleSidebarVisibility"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "f"
+            ],
+            "commands": [
+                "workbench.action.quickOpen"
+            ]
+        },
+        // BUFFER BINDS
+        {
+            "before": [
+                "<leader>",
+                "w"
+            ],
+            "commands": [
+                "workbench.action.files.save"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "x"
+            ],
+            "commands": [
+                "workbench.action.closeActiveEditor"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "/"
+            ],
+            "commands": [
+                ":nohl"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "t"
+            ],
+            "commands": [
+                "workbench.action.gotoSymbol"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "a"
+            ],
+            "commands": [
+                "editor.action.quickFix"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "r"
+            ],
+            "commands": [
+                "editor.action.goToReferences"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "e"
+            ],
+            "commands": [
+                "editor.action.marker.next"
+            ]
+        },
+        // NAVIGATION
+        {
+            "before": [
+                "shift+tab"
+            ],
+            "commands": [
+                "workbench.action.previousEditorInGroup"
+            ]
+        },
+        {
+            "before": [
+                "tab"
+            ],
+            "commands": [
+                "workbench.action.nextEditorInGroup"
+            ]
+        },
+        // MOVE EDITORS BETWEEN GROUPS
+        {
+            "before": [
+                "<leader>",
+                "<C-l>"
+            ],
+            "commands": [
+                "workbench.action.moveEditorToRightGroup"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "<C-h>"
+            ],
+            "commands": [
+                "workbench.action.moveEditorToLeftGroup"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "<C-k>"
+            ],
+            "commands": [
+                "workbench.action.moveEditorToAboveGroup"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "<C-j>"
+            ],
+            "commands": [
+                "workbench.action.moveEditorToBelowGroup"
+            ]
+        },
+        // MOVE BETWEEN GROUPS AND VIEWS
+        {
+            "before": [
+                "<C-h>"
+            ],
+            "commands": [
+                "workbench.action.navigateLeft"
+            ]
+        },
+        {
+            "before": [
+                "<C-l>"
+            ],
+            "commands": [
+                "workbench.action.navigateRight"
+            ]
+        },
+        {
+            "before": [
+                "<C-j>"
+            ],
+            "commands": [
+                "workbench.action.navigateDown"
+            ]
+        },
+        {
+            "before": [
+                "<C-k>"
+            ],
+            "commands": [
+                "workbench.action.navigateUp"
+            ]
+        }
+    ],
+    "vim.visualModeKeyBindings": [
+        {
+            "before": [
+                ">"
+            ],
+            "commands": [
+                "editor.action.indentLines"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "a"
+            ],
+            "commands": [
+                "editor.action.quickFix"
+            ]
+        },
+        {
+            "before": [
+                "<"
+            ],
+            "commands": [
+                "editor.action.outdentLines"
+            ]
+        }
+    ],
+    "vim.statusBarColorControl": true,
+    "vim.statusBarColors.insert": "#6d8400",
+    "vim.statusBarColors.normal": "#1d2021",
+    "vim.statusBarColors.replace": "#6f1f45",
+    "vim.statusBarColors.visual": "#b55d02",
+    "vim.statusBarColors.visualblock": "#a02236",
+    "vim.statusBarColors.visualline": "#9C195B",
+    //MISCELLANEOUS
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
     },
-    {
-      "before": ["<leader>", "z", "o"],
-      "commands": ["editor.unfoldRecursively"]
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-
-    // VIEWS
-    {
-      "before": ["<leader>", "e"],
-      "commands": ["workbench.view.explorer"]
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#1d2021",
+        "statusBar.noFolderBackground": "#1d2021",
+        "statusBar.debuggingBackground": "#1d2021",
+        "statusBar.foreground": "#ffffff",
+        "statusBar.debuggingForeground": "#ffffff"
     },
-    {
-      "before": ["<leader>", "h", "e"],
-      "commands": ["workbench.action.toggleSidebarVisibility"]
+    "git.autofetch": true,
+    "cSpell.language": "en, ru",
+    "editor.unicodeHighlight.allowedLocales": {
+        "ru": true
     },
-    {
-      "before": ["<leader>", "f"],
-      "commands": ["workbench.action.quickOpen"]
-    },
-
-    // BUFFER BINDS
-    {
-      "before": ["<leader>", "w"],
-      "commands": ["workbench.action.files.save"]
-    },
-    {
-      "before": ["<leader>", "x"],
-      "commands": ["workbench.action.closeActiveEditor"]
-    },
-    {
-      "before": ["<leader>", "/"],
-      "commands": [":nohl"]
-    },
-    {
-      "before": ["<leader>", "t"],
-      "commands": ["workbench.action.gotoSymbol"]
-    },
-    {
-      "before": ["g", "a"],
-      "commands": ["editor.action.quickFix"]
-    },
-    {
-      "before": ["g", "r"],
-      "commands": ["editor.action.goToReferences"]
-    },
-    {
-      "before": ["g", "e"],
-      "commands": ["editor.action.marker.next"]
-    },
-
-    // NAVIGATION
-    {
-      "before": ["shift+tab"],
-      "commands": ["workbench.action.previousEditorInGroup"]
-    },
-    {
-      "before": ["tab"],
-      "commands": ["workbench.action.nextEditorInGroup"]
-    },
-
-    // MOVE EDITORS BETWEEN GROUPS
-    {
-      "before": ["<leader>", "<C-l>"],
-      "commands": ["workbench.action.moveEditorToRightGroup"]
-    },
-    {
-      "before": ["<leader>", "<C-h>"],
-      "commands": ["workbench.action.moveEditorToLeftGroup"]
-    },
-    {
-      "before": ["<leader>", "<C-k>"],
-      "commands": ["workbench.action.moveEditorToAboveGroup"]
-    },
-    {
-      "before": ["<leader>", "<C-j>"],
-      "commands": ["workbench.action.moveEditorToBelowGroup"]
-    },
-
-    // MOVE BETWEEN GROUPS AND VIEWS
-    {
-      "before": ["<C-h>"],
-      "commands": ["workbench.action.navigateLeft"]
-    },
-    {
-      "before": ["<C-l>"],
-      "commands": ["workbench.action.navigateRight"]
-    },
-    {
-      "before": ["<C-j>"],
-      "commands": ["workbench.action.navigateDown"]
-    },
-    {
-      "before": ["<C-k>"],
-      "commands": ["workbench.action.navigateUp"]
-    }
-  ],
-
-  "vim.visualModeKeyBindings": [
-    {
-      "before": [">"],
-      "commands": ["editor.action.indentLines"]
-    },
-    {
-      "before": ["g", "a"],
-      "commands": ["editor.action.quickFix"]
-    },
-    {
-      "before": ["<"],
-      "commands": ["editor.action.outdentLines"]
-    }
-  ],
-  "vim.statusBarColorControl": true,
-  "vim.statusBarColors.insert": "#6d8400",
-  "vim.statusBarColors.normal": "#1d2021",
-  "vim.statusBarColors.replace": "#6f1f45",
-  "vim.statusBarColors.visual": "#b55d02",
-  "vim.statusBarColors.visualblock": "#a02236",
-  "vim.statusBarColors.visualline": "#9C195B",
-
-  //MISCELLANEOUS
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-
-  "workbench.colorCustomizations": {
-    "statusBar.background": "#1d2021",
-    "statusBar.noFolderBackground": "#1d2021",
-    "statusBar.debuggingBackground": "#1d2021",
-    "statusBar.foreground": "#ffffff",
-    "statusBar.debuggingForeground": "#ffffff"
-  },
-  "git.autofetch": true,
-  "cSpell.language": "en, ru",
-  "editor.unicodeHighlight.allowedLocales": {
-    "ru": true
-  },
+    "editor.stickyScroll.enabled": false,
 }
